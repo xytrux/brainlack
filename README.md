@@ -13,16 +13,4 @@ This is a simple language for simple people! The language uses the following com
 
 The interpreter reads commands from a file and executes them one by one. If the file cannot be opened, the interpreter will print an error message and exit.
 
-## Example
-> [!IMPORTANT]  
-> Make sure you run this in Visual Studio in a **C++** Console App! Just make sure you change `.cpp` to `.c` and turn off precompiled headers.
-1. Write your commands in a file. For example:
-```
-[..*,,(.*).].%
-```
-This will increment the value in the current memory cell twice, double it, triple it twice, move the memory pointer to the right, double the value in the new memory cell, output the ASCII value, move the memory pointer to the left, and output the ASCII value again.
-
-2. Save the file with "main.bl".
-
-3. Run the project in Visual Studio.
-    
+Learn more [here](https://armature64.github.io/learn-brainlack/)
