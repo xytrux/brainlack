@@ -37,6 +37,15 @@ int main() {
         else if (c == '%') {
             memset(memory, 0, sizeof(memory));
         }
+        else if (c == '#') {
+            *counter_ptr = 0;
+        }
+		else if (c == '@') {
+			printf("%d\n", *counter_ptr);
+		}
+        else if (c == '/') {
+            printf("\n");
+        }
     }
     fclose(file);
     return 0;
