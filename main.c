@@ -1,25 +1,34 @@
 #include <stdio.h>
 
 int main() {
+    char memory[100] = {0};
+    char* counter_ptr = &memory;
     char c;
-    int counter = 0;
 
     while ((c = getchar()) != EOF) {
         if (c == '[') {
-            counter++;
+            ++(*counter_ptr);
         }
         else if (c == ']') {
-            counter--;
+            --(*counter_ptr);
         }
-        else if (c == '*') { // Let's use '*' as the operator to multiply the counter by 2
-            counter *= 2;
+        else if (c == '*') {
+            *counter_ptr*=2;
         }
         else if (c == ',') {
-            counter *= 3;
+            *counter_ptr*=3;
         }
-        else if (c == '.') { // '.' is the end character
-            printf("%c", counter);
-            counter = 0;
+        else if (c == '(') {
+            ++(counter_ptr);
+        }
+		else if (c == ')') {
+			--(counter_ptr);
+		}
+        else if (c == '.') {
+            printf("%c", *counter_ptr);
+        }
+        else if (c == '%') {
+            memset(memory, 0, sizeof(memory));
         }
     }
 
