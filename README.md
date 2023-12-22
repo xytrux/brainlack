@@ -10,6 +10,7 @@ This is a simple language for simple people! The language uses the following com
 - `)`: Move the memory pointer to the left.
 - `.`: Output the ASCII value in the current memory cell.
 - `%`: Clear the memory.
+- `#`: Clear the current selected memory cell.
 
 The interpreter reads commands from a file and executes them one by one. If the file cannot be opened, the interpreter will print an error message and exit.
 
