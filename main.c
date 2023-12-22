@@ -5,6 +5,7 @@ int main() {
     char* counter_ptr = &memory;
     FILE* file;
     char c;
+    int comment = 0;
 
     file = fopen("main.bl", "r");
     if (file == NULL) {
@@ -13,7 +14,10 @@ int main() {
     }
 
     while ((c = fgetc(file)) != EOF) {
-        if (c == '[') {
+        if (c == ';') {
+            comment = !comment;
+        }
+        else if (c == '[') {
             ++(*counter_ptr);
         }
         else if (c == ']') {
