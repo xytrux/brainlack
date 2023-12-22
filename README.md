@@ -8,10 +8,10 @@
 <div align="center">
 
 <div align="center" dir="auto">
-<p dir="auto"><a href="https://github.com/armature64/brainlack/tree/main"><img src="https://camo.githubusercontent.com/57912f2a2adcce8983823d6de33da48656f844aebc1619b2b15c553b4b2d842e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7374617475732d6163746976652d737563636573732e737667" alt="Status" data-canonical-src="https://img.shields.io/badge/status-active-success.svg" style="max-width: 100%;"></a>
-<a href="https://github.com/armature64/brainlack/issues"><img src="https://camo.githubusercontent.com/d8045eb04b17b11fdaabd3ffb2fe651921a9e47148c0b869a68de42ab980fc6c/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732f627261696e6c61636b2f627261696e6c61636b2e737667" alt="GitHub Issues" data-canonical-src="https://img.shields.io/github/issues/brainlack/brainlack.svg" style="max-width: 100%;"></a>
-<a href="https://github.com/armature64/brainlack/pulls"><img src="https://camo.githubusercontent.com/b50a1404d336ca8a389a7390982f2c835f7c7d79cb1be9b93d66379d7febe887/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6973737565732d70722f627261696e6c61636b2f627261696e6c61636b2e737667" alt="GitHub Pull Requests" data-canonical-src="https://img.shields.io/github/issues-pr/brainlack/brainlack.svg" style="max-width: 100%;"></a>
-<a href="https://github.com/armature64/brainlack/LICENSE"><img src="https://img.shields.io/badge/license-MIT-red.svg" alt="License" data-canonical-src="https://img.shields.io/badge/license-MIT-red.svg" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://github.com/armature64/brainlack/tree/main"><img src="https://img.shields.io/badge/status-active-success/armature64/brainlack"></a>
+<a href="https://github.com/armature64/brainlack/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/armature64/brainlack"></a>
+<a href="https://github.com/armature64/brainlack/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/armature64/brainlack"></a>
+<a href="https://github.com/armature64/brainlack/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/armature64/brainlack"></a></p>
 </div>
 
 </div>
