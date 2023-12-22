@@ -26,7 +26,7 @@
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Installation](#installation)
-- [Learn BrainLack](https://strywaretech.github.io/learn-brainlack)
+- [Learn BrainLack](https://armature64.github.io/learn-brainlack)
 - [Usage](#usage)
 - [Built Using](#built_using)
 - [Authors](#authors)
