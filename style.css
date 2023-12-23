@@ -1,31 +1,44 @@
 body {
-    background-color: #D3D3D3;
+    background-color: #F5F5DC;
     font-family: 'Courier New', Courier, monospace;
     color: #000080;
-  }
-  
-  a {
-    color: #0000FF;
-    text-decoration: underline;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    color: #800000;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-  }
-  
-  p {
-    text-indent: 1em;
-    line-height: 1.6;
-  }
-  
-  img {
-    border: 2px solid #000000;
-  }
-  
-  .main-content {
-    background-color: #F5F5DC; /* This is light gray */
-    margin: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    background-color: #ADD8E6;
     padding: 10px;
-    border: 2px solid #000000;
-  }
+    border-bottom: 2px solid #000080;
+}
+
+ul,
+ol {
+    margin-left: 20px;
+}
+
+pre {
+    background-color: #aee9ff;
+    padding: 10px;
+    border: 1px solid #000080;
+}
+
+#table-of-contents ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#table-of-contents ul li {
+    padding: 5px 0;
+}
+
+#table-of-contents ul li a {
+    color: #000080;
+    text-decoration: none;
+    border-bottom: 1px dotted #000080;
+}
+
+#table-of-contents ul li a:hover {
+    color: #0000FF;
+}
