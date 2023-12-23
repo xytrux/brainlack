@@ -2,14 +2,13 @@
 <html>
 <head>
 
-  <meta name="generator" content="Jekyll v3.9.3" />
   <meta property="og:title" content="learning brainlack" />
   <meta property="og:locale" content="en_US" />
   <meta name="description" content="learn the language that makes you lack a brain for free!" />
   <meta property="og:description" content="learn the language that makes you lack a brain for free!" />
   <link rel="canonical" href="https://armature64.github.io/brainlack/learn/" />
   <meta property="og:url" content="https://armature64.github.io/brainlack/learn/" />
-  <meta property="og:site_name" content="learn brainlack" />
+  <meta property="og:site_name" content="learning brainlack" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
   <meta property="twitter:title" content="brainlack" />
@@ -61,6 +60,9 @@
         <li><code>)</code>: This command moves the memory pointer one step to the left.</li>
         <li><code>.</code>: This command outputs the ASCII value of the current memory cell. For example, if the current value is 65, it will output 'A'.</li>
         <li><code>%</code>: This command clears the memory, setting all cells to 0.</li>
+        <li><code>#</code>: This command sets the value at the memory location to 0.</li>
+        <li><code>@</code>: This command prints the integer value. (for debugging)</li>
+        <li><code>/</code>: This command prints a newline character</li>
     </ul>
     <p>Brainlack reads commands from a file and executes them one by one. If the file cannot be opened, the interpreter will print an error message and exit. Let's learn about it!</p>
     <h2 id="understanding-memory-cells-and-pointers">Understanding Memory Cells and Pointers</h2>
@@ -80,7 +82,7 @@
     <p>If your program isn't working as expected, here are some debugging tips:</p>
     <ul>
         <li>Check your commands: Make sure you're using the correct commands for what you want to do. Remember, each command in Brainlack has a specific function.</li>
-        <li>Check your memory cells: If your program involves moving the pointer, make sure you're keeping track of which cell the pointer is currently on.</li>
+        <li>Check your memory cells: If your program involves moving the pointer, make sure you're keeping track of which cell the pointer is currently on by using the <code>@</code> operator.</li>
         <li>Check your values: If your program involves manipulating the values in the memory cells, make sure the values are what you expect them to be.</li>
     </ul>
     <h2 id="running-the-project">Running the Project</h2>
