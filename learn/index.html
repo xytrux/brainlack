@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brainlack Language Documentation</title>
+    <style>
+        body {
+            background-color: #D3D3D3;
+            font-family: 'Times New Roman', Times, serif;
+            color: #000080;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            background-color: #ADD8E6;
+            padding: 10px;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        pre {
+            background-color: #aee9ff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brainlack: the language that makes you lack a brain!</h1>
+    <p>Welcome to the Brainlack language documentation. Brainlack is a simple, yet powerful language that uses a unique set of commands to manipulate memory cells and pointers. Let's dive into the commands:</p>
+    <ul>
+        <li><code>[</code>: This command increments the value in the current memory cell by 1. If the current value is 5, after this command it will be 6.</li>
+        <li><code>]</code>: This command decrements the value in the current memory cell by 1. If the current value is 5, after this command it will be 4.</li>
+        <li><code>*</code>: This command doubles the value in the current memory cell. If the current value is 5, after this command it will be 10.</li>
+        <li><code>,</code>: This command triples the value in the current memory cell. If the current value is 5, after this command it will be 15.</li>
+        <li><code>(</code>: This command moves the memory pointer one step to the right.</li>
+        <li><code>)</code>: This command moves the memory pointer one step to the left.</li>
+        <li><code>.</code>: This command outputs the ASCII value of the current memory cell. For example, if the current value is 65, it will output 'A'.</li>
+        <li><code>%</code>: This command clears the memory, setting all cells to 0.</li>
+    </ul>
+    <p>Brainlack reads commands from a file and executes them one by one. If the file cannot be opened, the interpreter will print an error message and exit. Let's learn about it!</p>
+    <h2>Understanding Memory Cells and Pointers</h2>
+    <p>In Brainlack, memory is represented as an array of cells, and there's a pointer that can move left or right to different cells. Each cell can hold a numerical value, and the commands you write will manipulate these values and the position of the pointer.</p>
+
+    <h2>Writing Your First Brainlack Program</h2>
+<p>Let's write a simple Brainlack program that increments a memory cell, moves the pointer, and then decrements the new memory cell. Here's how:</p>
+<ol>
+    <li>Open a new file in your text editor.</li>
+    <li>Type the following commands: <code>[.(.]</code></li>
+    <li>Save the file with the name "main.bl".</li>
+</ol>
+<p>This program will increment the value in the first memory cell, move the pointer to the right, and then decrement the value in the second memory cell.</p>
+    <h2>Debugging Your Brainlack Programs</h2>
+    <p>If your program isn't working as expected, here are some debugging tips:</p>
+    <ul>
+        <li>Check your commands: Make sure you're using the correct commands for what you want to do. Remember, each command in Brainlack has a specific function.</li>
+        <li>Check your memory cells: If your program involves moving the pointer, make sure you're keeping track of which cell the pointer is currently on.</li>
+        <li>Check your values: If your program involves manipulating the values in the memory cells, make sure the values are what you expect them to be.</li>
+    </ul>
+    <h2>Running the Project</h2>
+<p><strong>Note:</strong> You must add the Brainlack interpreter (bl.exe) to your system's PATH. Here's how:</p>
+<ol>
+    <li><a href="https://github.com/armature64/brainlack/releases/download/v2/bl.exe">Download the project</a></li>
+    <li>Locate the downloaded bl.exe file and put it in a folder named <code>brainlack</code>. Put it in the <code>%USERPROFILE%</code> directory.</li>
+    <li>Add the directory containing bl.exe to your system's PATH.</li>
+</ol>
+<p>On Windows, you can add bl.exe to your PATH by following these steps:</p>
+<ol>
+    <li>In Windows search, look up "env" and press "Enter"</li>
+    <li>Click on "Environment Variables...".</li>
+    <li>Under "System variables", find and select the "Path" variable, then click on "Edit...".</li>
+    <li>In the "Variable value" field, add <code>%USERPROFILE%\brainlack</code>.</li>
+    <li>Click "OK" on all dialogs to save your changes.</li>
+</ol>
+<p>Once you've added bl.exe to your PATH, you can run a Brainlack program by typing `bl <filename>.bl` in your terminal, where `<filename>.bl` is the name of your Brainlack program file.</p>
+
+<h2>Example</h2>
+<ol>
+    <li>First, write your commands in a file. Here's an example:
+        <pre><code>[..*,,(.*).]</code></pre>
+        This command sequence will increment the value in the current memory cell twice, double it, triple it twice, move the memory pointer to the right, double the value in the new memory cell, output the ASCII value, move the memory pointer to the left, and output the ASCII value again.
+    </li>
+    <li>Next, save the file with any name you like, but make sure it has the .bl extension. For example, "example.bl".</li>
+    <li>Finally, open your terminal, navigate to the directory containing your .bl file, and run the command `bl example.bl`.
+        The interpreter will execute the commands in the file and print the output to the console.
+    </li>
+</ol>
+</body>
+</html>
