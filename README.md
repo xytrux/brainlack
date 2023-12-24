@@ -54,6 +54,7 @@ Run `bl <filename>.bl` in your terminal.
 ## ✍️ Authors <a name = "authors"></a>
 - [@armature64](https://github.com/armature64) - Work for the language.
 - [@hamhimstudio](https://github.com/hamhimstudio) - The documentation
+- [@claytontdm](https://github.com/claytontdm) - Original JavaScript version
 
 See also the list of [contributors](https://github.com/armature64/brainlack/contributors) who participated in this project.
 #
