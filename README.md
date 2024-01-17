@@ -54,8 +54,7 @@ Run `bl <filename>.bl` in your terminal.
 
 ## ✍️ Authors <a name = "authors"></a>
 - [@westillthinking](https://github.com/westillthinking) - Work for the language.
-- [@hamhimstudio](https://github.com/hamhimstudio) - The documentation
-- [@claytontdm](https://github.com/claytontdm) - Original JavaScript version
+- [@claytontdm](https://github.com/claytontdm) - Original JS version (that sucked)
 
 See also the list of [contributors](https://github.com/westillthinking/brainlack/contributors) who participated in this project.
 #
