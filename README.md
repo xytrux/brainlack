@@ -8,10 +8,10 @@
 <div align="center">
 
 <div align="center" dir="auto">
-<p dir="auto"><a href="https://github.com/armature64/brainlack/tree/main"><img src="https://img.shields.io/badge/status-active-success/armature64/brainlack"></a>
-<a href="https://github.com/armature64/brainlack/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/armature64/brainlack"></a>
-<a href="https://github.com/armature64/brainlack/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/armature64/brainlack"></a>
-<a href="https://github.com/armature64/brainlack/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/armature64/brainlack"></a></p>
+<p dir="auto"><a href="https://github.com/westillthinking/brainlack/tree/main"><img src="https://img.shields.io/badge/status-active-success/westillthinking/brainlack"></a>
+<a href="https://github.com/westillthinking/brainlack/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/westillthinking/brainlack"></a>
+<a href="https://github.com/westillthinking/brainlack/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/westillthinking/brainlack"></a>
+<a href="https://github.com/westillthinking/brainlack/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/westillthinking/brainlack"></a></p>
 </div>
 
 </div>
@@ -40,9 +40,10 @@ In order to start using this lang, you must understand 2 things:
 - Pointers
 
 ## 💾 Installation <a name = "installation"></a>
-1. Download Brainlack [(bl.exe)](https://github.com/armature64/brainlack/releases/download/v2/bl.exe)
-2. Locate the downloaded bl.exe file and put it in a folder named brainlack. Put it in the `%USERPROFILE%` directory.
-3. Follow the [guide](https://armature64.github.io/learn-brainlack/#running-the-project) to add to PATH based on your operating system.
+1. Download Brainlack [(brainlack.zip)](https://github.com/westillthinking/brainlack/releases/download/v3/brainlack.zip)
+2. Locate the downloaded bl.exe file and extract the files.
+3. Put it in the `%USERPROFILE%` directory.
+4. Follow the [guide](https://westillthinking.github.io/learn-brainlack/#running-the-project) to add to PATH based on your operating system.
 
 ## 🎈 Usage <a name="usage"></a>
 
@@ -52,9 +53,9 @@ Run `bl <filename>.bl` in your terminal.
 - [C](https://www.learn-c.org/)
 
 ## ✍️ Authors <a name = "authors"></a>
-- [@armature64](https://github.com/armature64) - Work for the language.
+- [@westillthinking](https://github.com/westillthinking) - Work for the language.
 - [@hamhimstudio](https://github.com/hamhimstudio) - The documentation
 - [@claytontdm](https://github.com/claytontdm) - Original JavaScript version
 
-See also the list of [contributors](https://github.com/armature64/brainlack/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/westillthinking/brainlack/contributors) who participated in this project.
 #
