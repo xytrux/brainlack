@@ -40,8 +40,8 @@ In order to start using this lang, you must understand 2 things:
 - Pointers
 
 ## 💾 Installation <a name = "installation"></a>
-1. Download Brainlack [(Installer - May need to disable Anti Virus for this.)](https://github.com/westillthinking/brainlack/releases/download/v3/install.exe)
-2. Locate the downloaded installer and run it. It should do everything for you.
+1. Download Brainlack [(Installer)](https://github.com/westillthinking/brainlack/releases/download/v3/install.exe)
+2. Run the exe file (might need to turn off Anti Virus for this step)
 
 ## 🎈 Usage <a name="usage"></a>
 
