@@ -26,7 +26,7 @@
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Installation](#installation)
-- [Learn BrainLack](https://westillthinking.github.io/brainlack/learn)
+- [Learn BrainLack](https://nineby-nine.github.io/brainlack/learn)
 - [Usage](#usage)
 - [Built Using](#built_using)
 - [Authors](#authors)
