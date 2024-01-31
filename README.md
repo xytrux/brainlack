@@ -52,7 +52,7 @@ Run `bl <filename>.bl` in your terminal.
 
 ## ✍️ Authors <a name = "authors"></a>
 - [@westillthinking](https://github.com/westillthinking) - Work for the language.
-- [@claytontdm](https://github.com/claytontdm) - Original JS version (that sucked)
+- [@claytontdm](https://github.com/claytontdm) - Original JS version and online interpreter
 
 See also the list of [contributors](https://github.com/westillthinking/brainlack/contributors) who participated in this project.
 #
