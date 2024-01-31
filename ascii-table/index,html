@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta property="og:title" content="ascii table | brainlack official documentation" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="learn the language that makes you lack a brain for free!" />
+    <meta property="og:description" content="learn the language that makes you lack a brain for free!" />
+    <link rel="canonical" href="https://armature64.github.io/brainlack/learn/" />
+    <meta property="og:url" content="https://armature64.github.io/brainlack/learn/" />
+    <meta property="og:site_name" content="learning brainlack" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="brainlack" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+
+    <title>ASCII table</title>
+    <style>
+        body {
+            background-color: #F5F5DC;
+            font-family: 'Courier New', Courier, monospace;
+            color: #000080;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2 {
+            background-color: #ADD8E6;
+            padding: 10px;
+            border-bottom: 2px solid #000080;
+        }
+
+        ul,
+        ol {
+            margin-left: 20px;
+        }
+
+        pre {
+            background-color: #aee9ff;
+            padding: 10px;
+            border: 1px solid #000080;
+        }
+
+        #table-of-contents ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #table-of-contents ul li {
+            padding: 5px 0;
+        }
+
+        #table-of-contents ul li a {
+            color: #000080;
+            text-decoration: none;
+            border-bottom: 1px dotted #000080;
+        }
+
+        #table-of-contents ul li a:hover {
+            color: #0000FF;
+        }
+
+        #ascii-table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: 'Courier New', monospace;
+        }
+
+        #ascii-table th,
+        #ascii-table td {
+            border: 1px solid #000080;
+            padding: 8px;
+            text-align: center;
+        }
+
+        #ascii-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #ascii-table th {
+            background-color: #ADD8E6;
+            color: #000080;
+        }
+
+        #ascii-table tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="welcome">ASCII Table</h1>
+    <p>Here are the ASCII characters you can use with BrainLack!</p>
+    <table id="ascii-table">
+        <tr>
+            <th>ASCII Value</th>
+            <th>Character</th>
+        </tr>
+    </table>
+
+    <script>
+        let table = document.getElementById('ascii-table');
+
+        for (let i = 0; i <= 127; i++) {
+            let row = document.createElement('tr');
+
+            let cellValue = document.createElement('td');
+            cellValue.textContent = i;
+            row.appendChild(cellValue);
+
+            let cellChar = document.createElement('td');
+            cellChar.textContent = String.fromCharCode(i);
+            row.appendChild(cellChar);
+
+            table.appendChild(row);
+        }
+    </script>
+</body>
+
+</html>
