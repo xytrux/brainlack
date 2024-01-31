@@ -8,10 +8,10 @@
 <div align="center">
 
 <div align="center" dir="auto">
-<p dir="auto"><a href="https://github.com/westillthinking/brainlack/tree/main"><img src="https://img.shields.io/badge/status-active-success/westillthinking/brainlack"></a>
-<a href="https://github.com/westillthinking/brainlack/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/westillthinking/brainlack"></a>
-<a href="https://github.com/westillthinking/brainlack/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/westillthinking/brainlack"></a>
-<a href="https://github.com/westillthinking/brainlack/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/westillthinking/brainlack"></a></p>
+<p dir="auto"><a href="https://github.com/nineby-nine/brainlack/tree/main"><img src="https://img.shields.io/badge/status-active-success/nineby-nine/brainlack"></a>
+<a href="https://github.com/nineby-nine/brainlack/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/nineby-nine/brainlack"></a>
+<a href="https://github.com/nineby-nine/brainlack/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/nineby-nine/brainlack"></a>
+<a href="https://github.com/nineby-nine/brainlack/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/nineby-nine/brainlack"></a></p>
 </div>
 
 </div>
@@ -40,8 +40,10 @@ In order to start using this lang, you must understand 2 things:
 - Pointers
 
 ## 💾 Installation <a name = "installation"></a>
-1. Download Brainlack [(Installer)](https://github.com/westillthinking/brainlack/releases/download/v3/install.exe)
+1. Download Brainlack [(Installer)](https://github.com/nineby-nine/brainlack/releases/download/v3/install.exe)
 2. Run the exe file (might need to turn off Anti Virus for this step)
+
+Alternatively, you can use the [online interpreter](https://nineby-nine.github.io/brainlack/interpreter/) made by my good friend [ClaytonTDM](https://github.com/ClaytonTDM)
 
 ## 🎈 Usage <a name="usage"></a>
 
@@ -51,8 +53,8 @@ Run `bl <filename>.bl` in your terminal.
 - [C](https://www.learn-c.org/)
 
 ## ✍️ Authors <a name = "authors"></a>
-- [@westillthinking](https://github.com/westillthinking) - Work for the language.
+- [@nineby-nine](https://github.com/nineby-nine) - Creation of the language
 - [@claytontdm](https://github.com/claytontdm) - Original JS version and online interpreter
 
-See also the list of [contributors](https://github.com/westillthinking/brainlack/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/nineby-nine/brainlack/contributors) who participated in this project.
 #
