@@ -8,263 +8,312 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <style>
-  body {
-    background-color: #F5F5DC;
-    font-family: 'Courier New', Courier, monospace;
-    color: #000080;
-    margin: 0;
-    padding: 0;
+  @media screen and (min-width: 601px) {
+    * {
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+
+    body {
+      background-color: #F5F5DC;
+      font-family: 'Courier New', Courier, monospace;
+      color: #000080;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2 {
+      background-color: #ADD8E6;
+      padding: 10px;
+      border-bottom: 2px solid #000080;
+    }
+
+    ul,
+    ol {
+      margin-left: 20px;
+    }
+
+    pre {
+      background-color: #aee9ff;
+      padding: 10px;
+      border: 1px solid #000080;
+    }
+
+    #table-of-contents ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #table-of-contents ul li {
+      padding: 5px 0;
+    }
+
+    #table-of-contents ul li a {
+      color: #000080;
+      text-decoration: none;
+      border-bottom: 1px dotted #000080;
+    }
+
+    #table-of-contents ul li a:hover {
+      color: #0000FF;
+    }
+
+    button {
+      background-color: #ADD8E6;
+      /* same as h1, h2 background */
+      color: #000080;
+      /* same as body color */
+      border: 2px solid #000080;
+      /* same as h1, h2 border */
+      padding: 10px;
+      font-family: 'Courier New', Courier, monospace;
+      /* same as body font */
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #aee9ff;
+      /* lighter version of the original color */
+    }
+
+    button:active {
+      background-color: #87CEFA;
+      /* even lighter version of the original color */
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    button,
+    textarea {
+      font-size: 15px;
+      /* increase font size */
+      padding: 20px;
+      /* increase padding */
+    }
+
+    #main-content {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: start;
+    }
+
+    #button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    button {
+      flex: 1;
+      margin: 0 10px;
+      margin-top: 10px;
+    }
+
+    #output {
+      margin-top: 90px;
+    }
+
+    p {
+      text-align: center;
+    }
   }
 
-  h1,
-  h2 {
-    background-color: #ADD8E6;
-    padding: 10px;
-    border-bottom: 2px solid #000080;
-  }
+  @media screen and (max-width: 600px) {
 
-  ul,
-  ol {
-    margin-left: 20px;
-  }
+    #main-content,
+    footer {
+      display: none;
+    }
 
-  pre {
-    background-color: #aee9ff;
-    padding: 10px;
-    border: 1px solid #000080;
-  }
+    body {
+      background-color: #F5F5DC;
+      font-family: 'Courier New', Courier, monospace;
+      color: #000080;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      /* Disable all scrolling */
+    }
 
-  #table-of-contents ul {
-    list-style-type: none;
-    padding: 0;
-  }
+    p {
+      text-align: center;
+    }
 
-  #table-of-contents ul li {
-    padding: 5px 0;
-  }
+    #error-message {
+      display: block !important;
+      text-align: center;
+      padding: 10px;
+      max-height: 90vh;
+      /* Adjust this value as needed */
+      overflow: auto;
+    }
 
-  #table-of-contents ul li a {
-    color: #000080;
-    text-decoration: none;
-    border-bottom: 1px dotted #000080;
-  }
-
-  #table-of-contents ul li a:hover {
-    color: #0000FF;
-  }
-
-  button {
-    background-color: #ADD8E6;
-    /* same as h1, h2 background */
-    color: #000080;
-    /* same as body color */
-    border: 2px solid #000080;
-    /* same as h1, h2 border */
-    padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    /* same as body font */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  button:hover {
-    background-color: #aee9ff;
-    /* lighter version of the original color */
-  }
-
-  button:active {
-    background-color: #87CEFA;
-    /* even lighter version of the original color */
-  }
-
-  button:focus {
-    outline: none;
-  }
-
-  button,
-  textarea {
-    font-size: 15px;
-    /* increase font size */
-    padding: 20px;
-    /* increase padding */
-  }
-
-  #main-content {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: start;
-  }
-
-  #button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-
-  button {
-    flex: 1;
-    margin: 0 10px;
-    margin-top: 10px;
-  }
-
-  #output {
-    margin-top: 90px;
-  }
-  p {
-    text-align: center;
+    body.no-scroll {
+      position: fixed;
+      overflow-y: scroll;
+      width: 100%;
+    }
   }
 </style>
 
 <body>
-
-  <body>
-    <div id="main-content">
-      <div id="input-container">
-        <div id="button-container">
-          <button onclick="runInterpreter()"><i class="fas fa-play"></i></button>
-          <button onclick="downloadCode()"><i class="fas fa-download"></i></button>
-        </div>
-        <textarea rows="10" cols="75" id="codeInput" placeholder="Enter Brainlack code here"></textarea>
+  <div id="main-content">
+    <div id="input-container">
+      <div id="button-container">
+        <button onclick="runInterpreter()"><i class="fas fa-play"></i></button>
+        <button onclick="downloadCode()"><i class="fas fa-download"></i></button>
       </div>
-      <div id="output-container">
-        <textarea disabled rows="10" cols="75" placeholder="Output" id="output"></textarea>
-      </div>
+      <textarea rows="10" cols="75" id="codeInput" placeholder="Enter Brainlack code here"></textarea>
     </div>
-    <input type="checkbox" id="error" style="display:none;">
-    <p id="message"></p>
+    <div id="output-container">
+      <textarea disabled rows="10" cols="75" placeholder="Output" id="output"></textarea>
+    </div>
+  </div>
+  <input type="checkbox" id="error" style="display:none;">
+  <p id="message"></p>
+
+  <div id="error-message" style="display: none;">
+    <h1>Whoops!</h1>
+    <p>Your screen is too small to use the interpreter!</p>
+  </div>
 
 
-    <script>
-      function runBrainlack(code) {
-        const memory = Array(30000).fill(0);
-        let pointer = 0;
-        let output = '';
+  <script>
+    function runBrainlack(code) {
+      const memory = Array(30000).fill(0);
+      let pointer = 0;
+      let output = '';
 
-        // Remove new lines and comments
-        code = code.replace(/(\r\n|\n|\r|;[^\n]*$)/gm, '');
+      // Remove new lines and comments
+      code = code.replace(/(\r\n|\n|\r|;[^\n]*$)/gm, '');
 
-        for (let i = 0; i < code.length; i++) {
-          switch (code[i]) {
-            case ']':
-              memory[pointer]--;
-              break;
+      for (let i = 0; i < code.length; i++) {
+        switch (code[i]) {
+          case ']':
+            memory[pointer]--;
+            break;
 
-            case '*':
-              memory[pointer] *= 2;
-              break;
+          case '*':
+            memory[pointer] *= 2;
+            break;
 
-            case ',':
-              memory[pointer] *= 3;
-              break;
+          case ',':
+            memory[pointer] *= 3;
+            break;
 
-            case '(':
-              pointer++;
-              break;
+          case '(':
+            pointer++;
+            break;
 
-            case ')':
-              pointer--;
-              break;
+          case ')':
+            pointer--;
+            break;
 
-            case '.':
-              output += String.fromCharCode(memory[pointer]);
-              break;
+          case '.':
+            output += String.fromCharCode(memory[pointer]);
+            break;
 
-            case '%':
-              memory.fill(0);
-              break;
+          case '%':
+            memory.fill(0);
+            break;
 
-            case '#':
-              memory[pointer] = 0;
-              break;
+          case '#':
+            memory[pointer] = 0;
+            break;
 
-            case '@':
-              output += memory[pointer];
-              break;
+          case '@':
+            output += memory[pointer];
+            break;
 
-            case '/':
-              output += '\n';
-              break;
+          case '/':
+            output += '\n';
+            break;
 
-            case '&':
-              output += ' ';
-              break;
+          case '&':
+            output += ' ';
+            break;
 
-            case '[':
-              memory[pointer]++;
-              break;
+          case '[':
+            memory[pointer]++;
+            break;
 
-            default:
-              throw new Error(`Unknown command: ${code[i]}`);
-          }
-        }
-
-        return output;
-        // made by ClaytonTDM with ❤️
-      }
-
-      function runInterpreter() {
-        const codeInput = document.getElementById('codeInput');
-        const outputElement = document.getElementById('output');
-        const code = codeInput.value;
-
-        try {
-          const result = runBrainlack(code);
-          outputElement.value = result;
-          document.querySelector("#error").checked = false;
-        } catch (error) {
-          outputElement.value = `Error: ${error.message}`;
-          document.querySelector("#error").checked = true;
+          default:
+            throw new Error(`Unknown command: ${code[i]}`);
         }
       }
-      function downloadCode() {
-        runInterpreter();
-        if (document.querySelector("#error").checked == false) {
-          const codeInput = document.getElementById('codeInput');
-          const code = codeInput.value;
 
-          const blob = new Blob([code], { type: 'text/plain' });
-          const a = document.createElement('a');
-          a.href = URL.createObjectURL(blob);
-          a.download = 'code.bl';
-          document.body.appendChild(a);
-          a.click();
-          document.body.removeChild(a);
-        } else {
-          setTimeout(function () {
-            alert(document.getElementById('output').value);
-          }, 100);
-        }
-      }
-      let typingTimer; // timer identifier
-      const doneTypingInterval = 1000; // time in ms (5 seconds)
+      return output;
+      // made by ClaytonTDM with ❤️
+    }
+
+    function runInterpreter() {
       const codeInput = document.getElementById('codeInput');
       const outputElement = document.getElementById('output');
-      const messageElement = document.getElementById('message');
+      const code = codeInput.value;
 
-      // on keyup, start the countdown
-      codeInput.addEventListener('keyup', () => {
-        clearTimeout(typingTimer);
-        typingTimer = setTimeout(doneTyping, doneTypingInterval);
-      });
-
-      // on keydown, clear the countdown 
-      codeInput.addEventListener('keydown', () => {
-        clearTimeout(typingTimer);
-      });
-
-      // user is "finished typing," do something
-      function doneTyping() {
-        if (codeInput.value.trim() === '') {
-          messageElement.innerHTML = 'Stuck? <a href="https://nineby-nine.github.io/brainlack/learn/">Read the docs!</a>';
-        }
+      try {
+        const result = runBrainlack(code);
+        outputElement.value = result;
+        document.querySelector("#error").checked = false;
+      } catch (error) {
+        outputElement.value = `Error: ${error.message}`;
+        document.querySelector("#error").checked = true;
       }
-    </script>
-    <footer
-      style="position: fixed; left: 0; bottom: 0; width: 100%; background-color: #ADD8E6; color: #000080; text-align: center; padding: 20px;">
-      made by ClaytonTDM with ❤️
-    </footer>
-  </body>
+    }
+    function downloadCode() {
+      runInterpreter();
+      if (document.querySelector("#error").checked == false) {
+        const codeInput = document.getElementById('codeInput');
+        const code = codeInput.value;
+
+        const blob = new Blob([code], { type: 'text/plain' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'code.bl';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      } else {
+        setTimeout(function () {
+          alert(document.getElementById('output').value);
+        }, 100);
+      }
+    }
+    let typingTimer; // timer identifier
+    const doneTypingInterval = 1000; // time in ms (5 seconds)
+    const codeInput = document.getElementById('codeInput');
+    const outputElement = document.getElementById('output');
+    const messageElement = document.getElementById('message');
+
+    // on keyup, start the countdown
+    codeInput.addEventListener('keyup', () => {
+      clearTimeout(typingTimer);
+      typingTimer = setTimeout(doneTyping, doneTypingInterval);
+    });
+
+    // on keydown, clear the countdown 
+    codeInput.addEventListener('keydown', () => {
+      clearTimeout(typingTimer);
+    });
+
+    // user is "finished typing," do something
+    function doneTyping() {
+      if (codeInput.value.trim() === '') {
+        messageElement.innerHTML = 'Stuck? <a href="https://nineby-nine.github.io/brainlack/learn/">Read the docs!</a>';
+      }
+    }
+  </script>
+  <footer
+    style="position: fixed; left: 0; bottom: 0; width: 100%; background-color: #ADD8E6; color: #000080; text-align: center; padding: 20px; box-sizing: border-box;">
+    made by ClaytonTDM with ❤️
+  </footer>
+</body>
 
 </html>
