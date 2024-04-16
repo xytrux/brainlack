@@ -8,10 +8,10 @@
 <div align="center">
 
 <div align="center" dir="auto">
-<p dir="auto"><a href="https://github.com/nineby-nine/brainlack/tree/main"><img src="https://img.shields.io/badge/status-active-success/nineby-nine/brainlack"></a>
-<a href="https://github.com/nineby-nine/brainlack/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/nineby-nine/brainlack"></a>
-<a href="https://github.com/nineby-nine/brainlack/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/nineby-nine/brainlack"></a>
-<a href="https://github.com/nineby-nine/brainlack/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/nineby-nine/brainlack"></a></p>
+<p dir="auto"><a href="https://github.com/xytrux/brainlack/tree/main"><img src="https://img.shields.io/badge/status-active-success/xytrux/brainlack"></a>
+<a href="https://github.com/xytrux/brainlack/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/xytrux/brainlack"></a>
+<a href="https://github.com/xytrux/brainlack/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/xytrux/brainlack"></a>
+<a href="https://github.com/xytrux/brainlack/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/xytrux/brainlack"></a></p>
 </div>
 
 </div>
@@ -26,7 +26,7 @@
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Installation](#installation)
-- [Learn BrainLack](https://nineby-nine.github.io/brainlack/learn)
+- [Learn BrainLack](https://xytrux.github.io/brainlack/learn)
 - [Usage](#usage)
 - [Built Using](#built_using)
 - [Authors](#authors)
@@ -40,10 +40,10 @@ In order to start using this lang, you must understand 2 things:
 - Pointers
 
 ## 💾 Installation <a name = "installation"></a>
-1. Download Brainlack [(Installer)](https://github.com/nineby-nine/brainlack/releases/download/v3/install.exe)
+1. Download Brainlack [(Installer)](https://github.com/xytrux/brainlack/releases/download/v3/install.exe)
 2. Run the exe file (might need to turn off Anti Virus for this step)
 
-Alternatively, you can use the [online interpreter](https://nineby-nine.github.io/brainlack/interpreter/) made by my good friend [ClaytonTDM](https://github.com/ClaytonTDM)
+Alternatively, you can use the [online interpreter](https://xytrux.github.io/brainlack/interpreter/) made by my good friend [ClaytonTDM](https://github.com/ClaytonTDM)
 
 ## 🎈 Usage <a name="usage"></a>
 
@@ -53,8 +53,8 @@ Run `bl <filename>.bl` in your terminal.
 - [C](https://www.learn-c.org/)
 
 ## ✍️ Authors <a name = "authors"></a>
-- [@nineby-nine](https://github.com/nineby-nine) - Creation of the language
+- [@xytrux](https://github.com/xytrux) - Creation of the language
 - [@claytontdm](https://github.com/claytontdm) - Original JS version and online interpreter
 
-See also the list of [contributors](https://github.com/nineby-nine/brainlack/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/xytrux/brainlack/contributors) who participated in this project.
 #
